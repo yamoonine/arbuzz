@@ -1,12 +1,7 @@
 {
   "name": "study-git",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "version": "1.0.1",
+  "description": "Git 워크플로우 학습",
+  "keywords": ["Git", "Workflow"],
+  "author": "yamoo9 <yamoo9@naver.com>"
 }
