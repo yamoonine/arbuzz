@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "Git 워크플로우 학습",
   "scripts": {
-    "bundle": "rollup -c"
+    "bundle": "rollup -c",
+    "build": "BUILD=on rollup -c"
   },
   "keywords": [
     "Git",
@@ -17,6 +18,7 @@
     "eslint-plugin-import": "^2.11.0",
     "rollup": "^0.58.2",
     "rollup-plugin-babel": "^3.0.4",
-    "rollup-plugin-eslint": "^4.0.0"
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-uglify": "^3.0.0"
   }
 }
