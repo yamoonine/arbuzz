@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import eslint from 'rollup-plugin-eslint';
+import uglify from 'rollup-plugin-uglify';
 
 export default {
   input: 'public/js/index.js',
@@ -8,6 +9,7 @@ export default {
     format: 'iife'
   },
   plugins: [
+    (process.env.BUILD === 'on' && uglify()),
     babel({
       exclude: 'node_modules/**',
     }),
