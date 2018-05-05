@@ -7,3 +7,11 @@
 - GitKraken
 - SourceTree
 - GitHub Desktop
+
+## Git Commands
+
+- `git init`
+- `git add *`
+- `git commit --amend`
+- `git commit -m "commit message"`
+- `git push -u origin master`

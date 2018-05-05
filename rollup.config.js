@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel';
+import babel  from 'rollup-plugin-babel';
 import eslint from 'rollup-plugin-eslint';
 import uglify from 'rollup-plugin-uglify';
 
@@ -13,9 +13,9 @@ export default {
     babel({
       exclude: 'node_modules/**',
     }),
-    eslint({
+    (process.env.BUILD !== 'on' && eslint({
       include: './public/js/**',
       exclude: './public/js/bundle.js',
-    }),
+    })),
   ],
 };
